@@ -1,131 +1,169 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# MP1-DTL (User-Centric Frontend Development Milestone Project)
 
-Welcome Mahady H Likhon,
-
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
-
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
-
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
-
-A blue button should appear to click: _Make Public_,
-
-Another blue button should appear to click: _Open Browser_.
-
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-To log into the Heroku toolbelt CLI:
-
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
-
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
-
-### Connecting your Mongo database
-
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
-
-------
-
-## Release History
-
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
-
-**June 18, 2024,** Add Mongo back into template
-
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
-
-**May 28 2024:** Fix Mongo and Links installs
-
-**April 26 2024:** Update node version to 16
-
-**September 20 2023:** Update Python version to 3.9.17.
-
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
-
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
-
-**July 2 2021:** Remove extensions that are not available in Open VSX.
-
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+## Table of Contents
+1. [Project Overview](#project-overview)
+2. [User Experience (UX)](#user-experience-ux)
+    - [Project Goals](#project-goals)
+    - [User Stories](#user-stories)
+    - [Design](#design)
+    - [Wireframes](#wireframes)
+3. [Features](#features)
+4. [Technologies Used](#technologies-used)
+5. [Testing](#testing)
+    - [Manual Testing](#manual-testing)
+    - [Validation](#validation)
+    - [Bugs and Fixes](#bugs-and-fixes)
+6. [Deployment](#deployment)
+7. [Credits](#credits)
+8. [Acknowledgements](#acknowledgements)
 
 ---
 
-Happy coding!
+## Project Overview
+
+Deluxe Transportation is a static front-end website designed to present useful information to users about luxury transportation services. This project was developed as part of the User-Centric Frontend Development Milestone Project. The site is intended to meet both the user's needs and the site owner's goals, providing a clear, professional, and accessible user interface.
+
+**[update Add Project Link Here]**
+
+## User Experience (UX)
+
+### Project Goals
+The goal of this project is to create a responsive, user-friendly website that effectively communicates the services offered by Deluxe Transportation. The website aims to attract potential customers by showcasing the fleet, services, and contact information.
+
+### User Stories
+1. **New User Goals**:
+    - I want to understand what services the company offers.
+    - I want to easily find contact information to book a service.
+    - I want to see the fleet of vehicles available for hire.
+
+2. **Returning User Goals**:
+    - I want to quickly access booking options.
+    - I want to stay updated on new services or changes in offerings.
+
+3. **Frequent User Goals**:
+    - I want to contact the company directly through the website.
+    - I want to download the company brochure or CV.
+
+### Design
+#### Colour Scheme
+The website uses a professional colour palette of dark greys, whites, and accent colours like orange and blue to create a clean, modern look.
+
+#### Typography
+Two fonts, **Roboto** and **Exo**, are used throughout the website to maintain a balance between readability and style.
+
+#### Imagery
+High-quality images of the fleet and services are used to engage the user and convey a sense of luxury and professionalism.
+
+### Wireframes
+Wireframes were created to plan the layout of the site across different screen sizes (mobile, tablet, desktop). These wireframes served as a blueprint for the website's responsive design.
+
+**[update Add Wireframe Images and Links Here]**
+
+## Features
+
+### Existing Features
+1. **Responsive Navigation Bar**:
+    - A responsive navigation bar that adjusts to different screen sizes.
+
+2. **Hero Section**:
+    - A prominent hero section showcasing the company’s brand and main call-to-action.
+
+3. **Services Section**:
+    - Detailed information about the services offered, with visual icons and descriptions.
+
+4. **Fleet Showcase**:
+    - A gallery of vehicle images, each with descriptions and specifications.
+
+5. **Contact Information**:
+    - Clear and accessible contact details with links to social media profiles.
+
+6. **Footer**:
+    - A footer section containing additional navigation and download links.
+
+### Future Features
+1. **Online Booking Form**:
+    - Adding an interactive form for online bookings (pending the use of JavaScript).
+
+2. **Testimonials Section**:
+    - Displaying customer testimonials to build trust and credibility.
+
+## Technologies Used
+### Main Technologies
+- **HTML5**: For structuring the content of the site.
+- **CSS3**: For styling the site.
+- **Bootstrap 4.2.1**: For responsive design and layout.
+- **FontAwesome**: For icons and visual enhancements.
+- **Google Fonts**: For custom typography.
+
+### Tools
+- **Git**: For version control.
+- **GitHub Pages**: For deployment.
+- **Balsamiq**: For creating wireframes.
+
+## Testing
+
+### Manual Testing
+The website was manually tested across various browsers (Chrome, Firefox, Safari) and devices (mobile, tablet, desktop) to ensure compatibility and responsiveness.
+
+1. **Navigation**: 
+    - Tested all links in the navigation bar to ensure they direct to the correct pages.
+    - Verified that the navbar is responsive on mobile devices.
+
+2. **Responsive Design**:
+    - Checked that the layout adapts correctly to different screen sizes, ensuring all content is accessible.
+
+3. **Contact Links**:
+    - Tested all contact links (email, phone, social media) to ensure they open the correct apps or pages.
+
+### Validation
+- **HTML Validation**: The HTML code was validated using the [W3C HTML Validator](https://validator.w3.org/).
+- **CSS Validation**: The CSS code was validated using the [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
+
+### Bugs and Fixes
+- **Bug 1**: Issue with the navigation bar not collapsing on mobile devices.
+    - **Fix**: Adjusted the Bootstrap classes to ensure the collapse functionality works without JavaScript.
+  
+- **Bug 2**: Footer overlapping content on smaller screens.
+    - **Fix**: Added appropriate padding to ensure the footer stays at the bottom of the page.
+
+## Deployment
+
+### GitHub Pages
+The project was deployed using GitHub Pages. The deployment process is as follows:
+
+1. **Clone the Repository**: 
+    - Run `git clone [update repository URL]`.
+2. **Navigate to the Project Directory**:
+    - Use `cd [update project directory]`.
+3. **Push to GitHub**:
+    - Run `git push origin main`.
+4. **Deploy to GitHub Pages**:
+    - Go to the repository settings on GitHub.
+    - Under the "GitHub Pages" section, select the main branch as the source.
+
+**[Add Deployed Project Link Here]**
+
+### Running Locally
+To run the project locally, follow these steps:
+
+1. **Clone the Repository**:
+    - Run `git clone [update repository URL]`.
+2. **Open the Project**:
+    - Open the `index.html` file in your browser.
+
+## Credits
+
+### Content
+- The text content was created specifically for the Deluxe Transportation project.
+  
+### Media
+- **Images**: Images were sourced from **[ update Pexels.com](https://www.pexels.com/)**. Specific credits:
+    - **Saloon Image**: [ update Photographer's Name](https://www.pexels.com/photo/specific-image-url)
+
+### Code
+- **Bootstrap and FontAwesome**: External libraries used for styling and icons.
+- **CSS Snippets**: Certain CSS effects were inspired by tutorials found online and credited in the code.
+
+## Acknowledgements
+- 
+- **[Add any additional acknowledgements here]**
