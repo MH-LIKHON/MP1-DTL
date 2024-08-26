@@ -162,7 +162,6 @@ To run the project locally, follow these steps:
 
 ### Code
 - **Bootstrap and FontAwesome**: External libraries used for styling and icons.
-- **CSS Snippets**: Certain CSS effects were inspired by tutorials found online and credited in the code.
 
 ## Acknowledgements
 - 
