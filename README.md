@@ -42,7 +42,6 @@ The goal of this project is to create a responsive, user-friendly website that e
 
 3. **Frequent User Goals**:
     - I want to contact the company directly through the website.
-    - I want to download the company brochure or CV.
 
 ### Design
 #### Colour Scheme
@@ -156,6 +155,15 @@ The website was manually tested across various browsers (Chrome, Firefox, Safari
 
 - **Bug 12**: **Buttons not centered or sized appropriately in the contact form.**
   - **Fix**: Used Bootstrap's `d-flex`, `justify-content-center`, and `btn-sm` classes to center the buttons and make them smaller for a better layout.
+### Bug 13: HTML Validation Warning for Comments
+- **Issue**: During the HTML validation process, a warning was encountered indicating that the document was not mappable to XML 1.0 due to the presence of two consecutive hyphens in comments (e.g., `<!-----Navigation----->`). The warning is related to the way comments are structured with extra hyphens, which conflicts with XML parsing rules.
+
+- **Fix**: The comments were updated to be XML-compliant by removing the extra hyphens. For example, the comment `<!-----Navigation----->` was changed to `<!-- Navigation -->`. This ensures that the comments do not interfere with XML processing while still remaining descriptive.
+
+### Bug 14: Trailing Slashes in Self-Closing Tags
+- **Issue**: The HTML validation process flagged an issue with the trailing slashes (`/`) in self-closing tags like `<link />`. While valid in XHTML, trailing slashes are not necessary in HTML5 and can cause issues, especially with unquoted attribute values.
+
+- **Fix**: The trailing slashes were removed from the self-closing tags to comply with HTML5 standards. For example, `<link />` was changed to `<link>`. This ensures that the HTML is correctly formatted for HTML5 without any unnecessary elements that could cause validation issues.
 
 ## Deployment
 
@@ -189,9 +197,9 @@ To run the project locally, follow these steps:
 
 ### Media
 - **Images**: Images were sourced from **Pexels** and **Google Images**. Specific credits:
-    - **Image**: (https://wwww.pexels.com)
-    - **Images**: (https://wwww.google.com)
-    - **Videos**: (https://wwww.google.com)
+    - **Image**: Pexels (https://wwww.pexels.com)
+    - **Images**: Google Photos (https://wwww.google.com)
+    - **Videos**: ShutterStock (https://www.shutterstock.com/video/clip-16780849-4k-big-airplane-landing-dusk)
 - **Logo**: The logo was purchased and owned by the project owner.
 
 ### Code
