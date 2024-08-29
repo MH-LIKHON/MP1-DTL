@@ -13,13 +13,18 @@
 </head>
 
 <body>
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="index.html">
             <img src="assets/images/logo.png" alt="DELUXE TRANSPORTATION Logo" class="logo">
             DTL
         </a>
-        <div class="collapse navbar-collapse">
+        <input type="checkbox" id="navbar-toggle" class="d-none">
+        <label for="navbar-toggle" class="navbar-toggler">
+            <span class="navbar-toggler-icon"></span>
+        </label>
+        <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Home</a>
@@ -53,16 +58,8 @@
     <!-- Services Section -->
     <section id="services" class="container py-5">
         <h2 class="text-center mb-4">Our Services</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card hvr-grow">
-                    <div class="card-body">
-                        <h5 class="card-title">Airport Transfers</h5>
-                        <p class="card-text">Seamless airport transfers with professional drivers.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
                 <div class="card hvr-grow">
                     <div class="card-body">
                         <h5 class="card-title">Corporate Travel</h5>
@@ -70,7 +67,16 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="w-100 d-md-none"></div>
+            <div class="col-md-4 mb-4">
+                <div class="card hvr-grow">
+                    <div class="card-body">
+                        <h5 class="card-title">Airport Transfers</h5>
+                        <p class="card-text">Seamless airport transfers with professional drivers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
                 <div class="card hvr-grow">
                     <div class="card-body">
                         <h5 class="card-title">Wedding Transportation</h5>
@@ -78,9 +84,8 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="row mt-4">
-            <div class="col-md-4">
+            <div class="w-100 d-md-none"></div>
+            <div class="col-md-4 mb-4">
                 <div class="card hvr-grow">
                     <div class="card-body">
                         <h5 class="card-title">Event Transportation</h5>
@@ -88,7 +93,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 offset-md-4">
+            <div class="col-md-4 mb-4">
                 <div class="card hvr-grow">
                     <div class="card-body">
                         <h5 class="card-title">VIP Services</h5>
@@ -97,7 +102,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>        
 
     <!-- Testimonials Section -->
     <section id="testimonials" class="bg-light py-5 fade-in">
@@ -131,10 +136,10 @@
         <div class="container text-center">
             <h5 class="footer-heading">STAY IN TOUCH</h5>
             <p>
-                <a href="mailto:info@deluxetransport.com" class="text-white mx-2"><i class="fa fa-envelope"></i></a>
-                <a href="tel:+440123456789" class="text-white mx-2"><i class="fa fa-phone"></i></a>
-                <a href="#" class="text-white mx-2"><i class="fa fa-whatsapp"></i></a>
-                <a href="#" class="text-white mx-2"><i class="fa fa-facebook"></i></a>
+                <a href="#" onclick="alert('Service Not Enabled');" class="text-white mx-2"><i class="fa fa-envelope"></i></a>
+                <a href="#" onclick="alert('Service Not Enabled');" class="text-white mx-2"><i class="fa fa-phone"></i></a>
+                <a href="#" onclick="alert('Service Not Enabled');" class="text-white mx-2"><i class="fa fa-whatsapp"></i></a>
+                <a href="#" onclick="alert('Service Not Enabled');" class="text-white mx-2"><i class="fa fa-facebook"></i></a>
             </p>
             <p class="mb-0 mt-4">© 2024 DELUXE TRANSPORTATION. All Rights Reserved.</p>
         </div>

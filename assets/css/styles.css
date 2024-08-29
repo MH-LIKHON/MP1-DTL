@@ -48,6 +48,48 @@ h1, h2, h3, h4, h5, h6 {
     color: #fff;
 }
 
+.navbar-toggler {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: block;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    #navbarNav {
+        display: none;
+    }
+
+    #navbar-toggle:checked + .navbar-toggler,
+    #navbar-toggle:checked + .navbar-toggler + .navbar-collapse {
+        background-color: #ffcc00;
+    }
+
+    #navbar-toggle:checked + .navbar-toggler + .navbar-collapse {
+        display: block;
+        width: 100%;
+        background-color: #222;
+    }
+
+    .navbar-collapse ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-collapse ul li {
+        margin-bottom: 10px;
+    }
+
+    .navbar-collapse ul li a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
 /*-----Hero Section-----*/
 header.jumbotron {
     padding: 120px 0;
@@ -90,6 +132,12 @@ header .btn:hover {
     transform: translateY(-3px);
 }
 
+header .btn:active,
+header .btn:focus {
+    background-color: #ffcc00;
+    color: #fff;
+}
+
 .logo {
     height: 50px;
     width: auto;
@@ -105,6 +153,113 @@ header .btn:hover {
     to {
         opacity: 1;
     }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.fade-in-element {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.typewriter {
+    overflow: hidden;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typewriter 4s steps(40, end) 2s 1 normal both, blink 0.75s step-end infinite;
+}
+
+/*-----Content Section-----*/
+section#welcome {
+    padding: 80px 0;
+}
+
+section#welcome h2 {
+    margin-bottom: 40px;
+}
+
+.row.equal-height-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+    border-bottom: 5px solid #ffcc00;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-body {
+    text-align: center;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-family: 'Exo', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.card-text {
+    font-weight: 300;
+    color: #777;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card .btn {
+    background-color: #222;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    align-self: center;
+}
+
+.card .btn:hover {
+    background-color: #ffcc00;
+    color: #333;
+    transform: scale(1.05);
 }
 
 /*-----Fleet Section-----*/
@@ -132,6 +287,16 @@ section#fleet h2 {
 }
 
 .card img {
+    height: 200px;
+    object-fit: contain;
+    width: 100%;
+    border-bottom: 5px solid #ffcc00;
+}
+
+.index-card img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
     border-bottom: 5px solid #ffcc00;
 }
 
@@ -166,6 +331,7 @@ section#fleet h2 {
     border: none;
     padding: 10px 20px;
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    align-self: center;
 }
 
 .card .btn:hover {
@@ -202,6 +368,32 @@ section#services p {
     font-weight: 300;
     color: #666;
     line-height: 1.7;
+}
+
+#services .row {
+    margin-bottom: 0px;
+}
+
+#services .card {
+    margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+    section#services .row {
+        margin-bottom: 15px;
+    }
+
+    section#services .row:last-child {
+        margin-bottom: 0;
+    }
+
+    section#services .card {
+        margin-bottom: 15px;
+    }
+
+    section#services .card:last-child {
+        margin-bottom: 0;
+    }
 }
 
 /*-----Why Choose Us Section-----*/
@@ -343,6 +535,10 @@ footer .fa:hover {
 
     header.jumbotron {
         padding: 80px 0;
+    }
+
+    header.jumbotron h1 {
+        font-size: 32px;
     }
 
     section#fleet,
