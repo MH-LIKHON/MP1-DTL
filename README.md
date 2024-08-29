@@ -206,9 +206,9 @@ The website was manually tested across various browsers (Chrome, Firefox, Safari
 The project was deployed using GitHub Pages. The deployment process is as follows:
 
 1. **Clone the Repository**: 
-    - Run `git clone [Update Repository URL]`.
+    - Run `git clone [MP1-DTL](https://github.com/MH-LIKHON/MP1-DTL.git)`.
 2. **Navigate to the Project Directory**:
-    - Use `cd [Update Project Directory]`.
+    - Use `cd [MP1-DTL](https://github.com/MH-LIKHON/MP1-DTL.git)`.
 3. **Push to GitHub**:
     - Run `git push origin main`.
 4. **Deploy to GitHub Pages**:
@@ -221,7 +221,7 @@ The project was deployed using GitHub Pages. The deployment process is as follow
 To run the project locally, follow these steps:
 
 1. **Clone the Repository**:
-    - Run `git clone [Update Repository URL]`.
+    - Run `git clone [MP1-DTL](https://github.com/MH-LIKHON/MP1-DTL.git)`.
 2. **Open the Project**:
     - Open the `index.html` file in your browser.
 
