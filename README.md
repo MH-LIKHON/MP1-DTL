@@ -23,7 +23,7 @@
 
 Deluxe Transportation is a static front-end website designed to present useful information to users about luxury transportation services. This project was developed as part of the User-Centric Frontend Development Milestone Project. The site is intended to meet both the user's needs and the site owner's goals, providing a clear, professional, and accessible user interface.
 
-**[Update: Add Project Link Here]**
+**[MP1-DTL](https://github.com/MH-LIKHON/MP1-DTL.git)**
 
 ## User Experience (UX)
 
@@ -55,8 +55,10 @@ High-quality images of the fleet and services are used to engage the user and co
 
 ### Wireframes
 Wireframes were created to plan the layout of the site across different screen sizes (mobile, tablet, desktop). These wireframes served as a blueprint for the website's responsive design.
-
-**[Update: Add Wireframe Images and Links Here]**
+  - [HOME](assets/wireframes/MP1-DTL_home.bmpr)
+  - [FLEET](assets/wireframes/MP1-DTL_fleet.bmpr)
+  - [SERVICES](assets/wireframes/MP1-DTL_services.bmpr)
+  - [CONTACT](assets/wireframes/MP1-DTL_contact.bmpr)
 
 ## Features
 
@@ -243,4 +245,4 @@ To run the project locally, follow these steps:
 - **Bootstrap and FontAwesome**: External libraries used for styling and icons.
 
 ## Acknowledgements
-- I would like to thank [Teacher & Mentor's Name] for their guidance and support throughout the project.
+- I would like to thank Manuel, Miguel & Alan for their guidance and support throughout the project.
