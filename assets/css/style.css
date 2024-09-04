@@ -1,9 +1,9 @@
-/*----- Font Import -----*/
-/* Importing Google Fonts: Roboto and Exo for use throughout the site */
+/*-----Font Import-----*/
+/* Importing Google Fonts: Roboto and Exo for font usage throughout the website */
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Exo:400,600,700');
 
-/*----- Base Styles -----*/
-/* Basic styling for the body and headings, setting font, background color, and text color */
+/*-----Base Styles-----*/
+/* Setting base styles for the entire webpage including font, colors, and line height */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -14,19 +14,20 @@ body {
     line-height: 1.6;
 }
 
+/* Removing default margin and padding for all heading elements */
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
     padding: 0;
 }
 
-/*----- Navigation -----*/
-/* Styling for the navigation bar, links, and brand */
+/*-----Navigation-----*/
+/* Styling for the navigation bar and its elements */
 .navbar {
     background-color: #222;
     padding: 15px;
 }
 
-/* Navigation link styles including hover effects */
+/* Styling for navigation links with a hover effect */
 .navbar .nav-link {
     color: #fff;
     text-transform: uppercase;
@@ -36,13 +37,13 @@ h1, h2, h3, h4, h5, h6 {
     padding-right: 15px;
 }
 
-/* Hover effect for navigation links */
+/* Hover effect for navigation links: color change and scaling */
 .navbar .nav-link:hover {
     color: #ffcc00;
     transform: scale(1.1);
 }
 
-/* Brand/logo specific styles */
+/* Styling for the brand text/logo in the navigation bar */
 .navbar .navbar-brand {
     font-family: 'Exo', sans-serif;
     font-weight: 600;
@@ -50,18 +51,20 @@ h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
-/* Hover effect for the brand/logo */
+/* Hover effect for the brand logo */
 .navbar .navbar-brand:hover {
     color: #fff;
 }
 
-/* Toggle button styles for mobile view */
+/* Default hiding of the navbar toggler (used in mobile view) */
 .navbar-toggler {
     display: none;
 }
 
-/* Media query for responsive navbar on smaller screens */
+/*----- Media Query for Navbar Responsiveness -----*/
+/* Adjusting navigation bar for smaller screens */
 @media (max-width: 768px) {
+    /* Display navbar toggler button on smaller screens */
     .navbar-toggler {
         display: block;
         background-color: transparent;
@@ -69,40 +72,44 @@ h1, h2, h3, h4, h5, h6 {
         outline: none;
     }
 
+    /* Default hiding of navbar menu (for mobile) */
     #navbarNav {
         display: none;
     }
 
-    /* Styling for toggled navigation visibility and background color */
+    /* Styling the navigation when the toggler is clicked */
     #navbar-toggle:checked + .navbar-toggler,
     #navbar-toggle:checked + .navbar-toggler + .navbar-collapse {
         background-color: #ffcc00;
     }
 
+    /* Displaying the navbar collapse section when toggled */
     #navbar-toggle:checked + .navbar-toggler + .navbar-collapse {
         display: block;
         width: 100%;
         background-color: #222;
     }
 
-    /* Adjusting flex direction for mobile view */
+    /* Adjusting the navbar layout to be vertical (column) for mobile screens */
     .navbar-collapse ul {
         flex-direction: column;
         align-items: center;
     }
 
+    /* Adding space between menu items in mobile view */
     .navbar-collapse ul li {
         margin-bottom: 10px;
     }
 
+    /* Centering links in mobile view */
     .navbar-collapse ul li a {
         width: 100%;
         text-align: center;
     }
 }
 
-/*----- Hero Section -----*/
-/* Styling for the hero section with background video or image */
+/*-----Hero Section-----*/
+/* Styling for the hero section, with background image, alignment, and padding */
 header.jumbotron {
     padding: 120px 0;
     background-size: cover;
@@ -114,7 +121,7 @@ header.jumbotron {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Hero title styling */
+/* Hero section heading styles */
 header h1 {
     font-family: 'Exo', sans-serif;
     font-size: 48px;
@@ -123,14 +130,14 @@ header h1 {
     margin-bottom: 20px;
 }
 
-/* Styling for hero section paragraph */
+/* Paragraph text styles in the hero section */
 header p {
     font-size: 18px;
     font-weight: 300;
     margin-bottom: 30px;
 }
 
-/* Button styles in hero section with hover and active effects */
+/* Button styles in the hero section with hover and active effects */
 header .btn {
     background-color: #ffcc00;
     border: none;
@@ -141,41 +148,41 @@ header .btn {
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Hover effect for hero section button */
+/* Hover effect for hero section buttons */
 header .btn:hover {
     background-color: #333;
     color: #ffcc00;
     transform: translateY(-3px);
 }
 
-/* Ensuring active/focused state for buttons */
+/* Active and focus state for the hero section buttons */
 header .btn:active,
 header .btn:focus {
     background-color: #ffcc00;
     color: #fff;
 }
 
-/* Logo image styles */
+/* Logo styling in the hero section */
 .logo {
     height: 50px;
     width: auto;
     margin-right: 10px;
 }
 
-/* Fade-in animation for elements */
+/* Fade-in effect for elements with the 'fade-in-element' class */
 .fade-in-element {
     opacity: 0;
     animation: fadeIn 1s forwards;
 }
 
-/* Keyframes for fade-in animation */
+/* Keyframe animation for the fade-in effect */
 @keyframes fadeIn {
     to {
         opacity: 1;
     }
 }
 
-/* Keyframes for typewriter effect used in certain sections */
+/* Typewriter effect for text animation */
 @keyframes typewriter {
     from {
         width: 0;
@@ -185,15 +192,24 @@ header .btn:focus {
     }
 }
 
-/* Keyframes for blinking effect in the typewriter effect */
+/* Blinking effect for typewriter cursor */
 @keyframes blink {
     50% {
         border-color: transparent;
     }
 }
 
-/*----- Content Section -----*/
-/* General styles for the welcome section */
+/* Typewriter effect for elements with this class */
+.typewriter {
+    overflow: hidden;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typewriter 4s steps(40, end) 2s 1 normal both, blink 0.75s step-end infinite;
+}
+
+/*-----Content Section-----*/
+/* Styling for the welcome section */
 section#welcome {
     padding: 80px 0;
 }
@@ -202,13 +218,13 @@ section#welcome h2 {
     margin-bottom: 40px;
 }
 
-/* Flexbox styling for equal height cards */
+/* Flexbox layout for cards in the welcome section */
 .row.equal-height-cards {
     display: flex;
     flex-wrap: wrap;
 }
 
-/* Styling for images inside cards */
+/* Card image styling to maintain consistent size */
 .card img {
     height: 200px;
     object-fit: cover;
@@ -216,7 +232,7 @@ section#welcome h2 {
     border-bottom: 5px solid #ffcc00;
 }
 
-/* Card specific styles including hover effects */
+/* Styling for cards with hover effects */
 .card {
     border: none;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -228,8 +244,282 @@ section#welcome h2 {
     flex-grow: 1;
 }
 
-/*----- Footer -----*/
-/* Footer styles including text and icon hover effects */
+/* Centering the card body content */
+.card-body {
+    text-align: center;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+/* Title styling inside the cards */
+.card-title {
+    font-family: 'Exo', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* Text styling inside the cards */
+.card-text {
+    font-weight: 300;
+    color: #777;
+}
+
+/* Hover effect for cards */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Button styling inside the cards */
+.card .btn {
+    background-color: #222;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    align-self: center;
+}
+
+/* Hover effect for buttons inside cards */
+.card .btn:hover {
+    background-color: #ffcc00;
+    color: #333;
+    transform: scale(1.05);
+}
+
+/*-----Fleet Section-----*/
+/* Fleet section styles */
+section#fleet {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+/* Fleet section title styling */
+section#fleet h2 {
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+}
+
+/* Styling for cards in the fleet section */
+.card {
+    border: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjusting the height of images inside fleet section cards */
+.card img {
+    height: 200px;
+    object-fit: contain;
+    width: 100%;
+    border-bottom: 5px solid #ffcc00;
+}
+
+/* Image styling for index cards */
+.index-card img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+    border-bottom: 5px solid #ffcc00;
+}
+
+/* Fleet card body styling */
+.card-body {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Fleet card title styling */
+.card-title {
+    font-family: 'Exo', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+/* Fleet card text styling */
+.card-text {
+    font-weight: 300;
+    color: #777;
+}
+
+/* Hover effect for fleet cards */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/*-----Services Section-----*/
+/* Services section styles */
+section#services {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+}
+
+/* Services section title styling */
+section#services h2 {
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+}
+
+/* Service heading (h3) styles */
+section#services h3 {
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #222;
+}
+
+/* Paragraph styling inside services section */
+section#services p {
+    font-weight: 300;
+    color: #666;
+    line-height: 1.7;
+}
+
+/* Center alignment of the services cards */
+#services .row {
+    margin-bottom: 0px;
+}
+
+/* Adjusting services card alignment */
+#services .card {
+    margin: 0 auto;
+}
+
+/* Media query for adjusting services cards on smaller screens */
+@media (max-width: 576px) {
+    /* Adding margin between rows in smaller screens */
+    section#services .row {
+        margin-bottom: 15px;
+    }
+
+    /* Removing extra margin from the last row */
+    section#services .row:last-child {
+        margin-bottom: 0;
+    }
+
+    /* Adding margin between cards on small screens */
+    section#services .card {
+        margin-bottom: 15px;
+    }
+
+    /* Removing extra margin from the last card */
+    section#services .card:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/*-----Why Choose Us Section-----*/
+/* Styling for the "Why Choose Us" section */
+section#why-choose-us {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+/* Title styling in "Why Choose Us" section */
+section#why-choose-us h2 {
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+}
+
+/* Column heading styling for the section (with a shadow effect) */
+section#why-choose-us .col-md-3 h3 {
+    font-size: 48px;
+    color: #ffcc00;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Paragraph styling for columns in "Why Choose Us" section */
+section#why-choose-us .col-md-3 p {
+    font-weight: 300;
+    color: #777;
+}
+
+/*-----Contact Section-----*/
+/* Contact section styling */
+section#contact {
+    padding: 80px 0;
+    background-color: #f8f8f8;
+}
+
+/* Title styling for the contact section */
+section#contact h2 {
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+}
+
+/* Form label styling inside the contact section */
+section#contact .form-group label {
+    font-weight: 500;
+    color: #333;
+}
+
+/* Input and textarea styling inside the contact form */
+section#contact .form-group input,
+section#contact .form-group textarea {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Prevent textarea resizing */
+section#contact .form-group textarea {
+    resize: none;
+}
+
+/* Button styling for the contact form */
+section#contact .btn {
+    background-color: #ffcc00;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect for contact form button */
+section#contact .btn:hover {
+    background-color: #222;
+    color: #ffcc00;
+    transform: translateY(-3px);
+}
+
+/*-----Footer-----*/
+/* Footer styling */
 footer {
     background-color: #222;
     color: #fff;
@@ -237,6 +527,7 @@ footer {
     text-align: center;
 }
 
+/* Footer heading styling */
 footer .footer-heading {
     font-family: 'Exo', sans-serif;
     font-weight: 600;
@@ -246,47 +537,51 @@ footer .footer-heading {
     font-size: 24px;
 }
 
-/* Styling for footer icons */
+/* Footer link and icon styling */
 footer a {
     color: #ffcc00;
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
     font-size: 24px;
 }
 
-/* Hover effects for footer links */
+/* Hover effect for footer links */
 footer a:hover {
     color: #fff;
     transform: scale(1.2);
 }
 
-/* Footer social media icons styles */
+/* Styling for footer icons */
 footer .fa {
     font-size: 24px;
     margin: 0 15px;
     transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 
-/* Hover effect for footer social media icons */
+/* Hover effect for footer icons */
 footer .fa:hover {
     color: #ffcc00;
     transform: scale(1.2);
 }
 
-/*----- Responsive Design -----*/
-/* Adjustments for screens smaller than 768px */
+/*-----Responsive Design-----*/
+/* Media query for screens smaller than 768px */
 @media (max-width: 768px) {
+    /* Centering the navigation menu */
     .navbar .navbar-collapse {
         text-align: center;
     }
 
+    /* Adding space between nav items */
     .navbar .nav-item {
         margin-bottom: 10px;
     }
 
+    /* Decreasing font size for smaller screens */
     .navbar .nav-link {
         font-size: 16px;
     }
 
+    /* Adjusting hero section padding and font size for smaller screens */
     header.jumbotron {
         padding: 80px 0;
     }
@@ -295,10 +590,32 @@ footer .fa:hover {
         font-size: 32px;
     }
 
+    /* Adjusting padding for sections in smaller screens */
     section#fleet,
     section#services,
     section#why-choose-us,
     section#contact {
         padding: 50px 0;
+    }
+
+    /* Adjusting font size for the "Why Choose Us" section on smaller screens */
+    section#why-choose-us .col-md-3 h3 {
+        font-size: 36px;
+    }
+}
+
+/* Media query for screens smaller than 576px */
+@media (max-width: 576px) {
+    /* Reducing padding for sections on smaller screens */
+    section#fleet,
+    section#services,
+    section#why-choose-us,
+    section#contact {
+        padding: 40px 0;
+    }
+
+    /* Further reducing font size for headings in the "Why Choose Us" section */
+    section#why-choose-us .col-md-3 h3 {
+        font-size: 32px;
     }
 }
