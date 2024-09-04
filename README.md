@@ -29,7 +29,7 @@
 Deluxe Transportation is a static front-end website designed to present useful information to users about luxury transportation services. This project was developed as part of the User-Centric Frontend Development Milestone Project. The site is intended to meet both the user's needs and the site owner's goals, providing a clear, professional, and accessible user interface.
 
 ### LIVE SITE
-**[Live Site](https://com)**
+**[Live Site](https://mh-likhon.github.io/MP1-DTL/)**
 
 ### REPOSITORY
 **[Repository](https://github.com/MH-LIKHON/MP1-DTL.git)**
@@ -332,19 +332,19 @@ Google Lighthouse was used to assess the site's performance, accessibility, best
 
 ---
 #### `INDEX.HTML`
-![Google Lighthouse index.html](assets/images/lighthouse-index.png)
+![Google Lighthouse index.html](assets/pdfs/lighthouse-index.pdf)
 
 ---
 #### `FLEET.HTML`
-![Google Lighthouse fleet.html](assets/images/lighthouse-fleet.png)
+![Google Lighthouse fleet.html](assets/pdfs/lighthouse-fleet.pdf)
 
 ---
 #### `SERVICES.HTML`
-![Google Lighthouse services.html](assets/images/lighthouse-services.png)
+![Google Lighthouse services.html](assets/pdfs/lighthouse-services.pdf)
 
 ---
 #### `CONTACT.HTML`
-![Google Lighthouse contact.html](assets/images/lighthouse-contact.png)
+![Google Lighthouse contact.html](assets/pdfs/lighthouse-contact.pdf)
 
 ---
 ### HTML VALIDATION
@@ -362,16 +362,16 @@ All HTML pages were validated using the W3C Markup Validation Service to ensure 
 ---
 #### SCREENSHOTS:
 - `index.html` Validation Result:
-  ![index.html validation](assets/images/index-validation.png)
+  ![index.html validation](assets/pdfs/index-validation.pdf)
 
 - `fleet.html` Validation Result:
-  ![fleet.html validation](assets/images/fleet-validation.png)
+  ![fleet.html validation](assets/pdfs/fleet-validation.pdf)
 
 - `services.html` Validation Result:
-  ![services.html validation](assets/images/services-validation.png)
+  ![services.html validation](assets/pdfs/services-validation.pdf)
 
 - `contact.html` Validation Result:
-  ![contact.html validation](assets/images/contact-validation.png)
+  ![contact.html validation](assets/pdfs/contact-validation.pdf)
 
 ---
 ### CSS VALIDATION
@@ -385,7 +385,7 @@ The project's CSS was validated using the W3C CSS Validator to ensure there were
 ---
 #### SCREENSHOT:
 - CSS Validation Result:
-  ![CSS validation](assets/images/css-validation.png)
+  ![CSS validation](assets/pdfs/css-validation.pdf)
 
 ---
 ### TESTING SUMMARY
@@ -473,24 +473,13 @@ This project was deployed using **GitHub Pages** to host static websites directl
 ### STEPS FOR DEPLOYMENT ON GITHUB PAGES:
 
 1. **Clone the Repository**:
-    - First, I cloned the project repository to my local machine by running the following command:
-    ```bash
-    git clone https://github.com/MH-LIKHON/MP1-DTL.git
-    ```
+    - First, I cloned the template project (ci-full-template), then renamed it to MP1-DTL and created a repository.
 
 2. **Access the Project Directory**:
-    - After cloning the repository, I navigated into the project folder using the command:
-    ```bash
-    cd MP1-DTL
-    ```
+    - After cloning the repository, I created a workspace in GitPod and then I navigated into the project folder. Also, I created the necessary filse and folders.
 
 3. **Set up and Push Changes to GitHub**:
-    - Any changes made locally were committed and pushed to the main branch using the following commands:
-    ```bash
-    git add .
-    git commit -m "Detailed description of changes"
-    git push origin main
-    ```
+    - Any changes made locally were committed and pushed to the main branch.
 
 4. **Deploy to GitHub Pages**:
     - Next, I navigated to the GitHub repository's **Settings** by selecting it from the repository's menu bar.
