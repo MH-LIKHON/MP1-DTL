@@ -219,7 +219,7 @@ You can view the wireframes here:
 
 1. **Hover Effects**:
     - Hover effects are applied to key elements, including buttons, service icons, and social media links. 
-    - Buttons change color and grow slightly when hovered over, providing users with immediate visual feedback.
+    - Buttons change color and grow slightly when hovered over, providing users with visual feedback.
     ![Hover Effects](assets/images/hover1.png)
     ![Hover Effects](assets/images/hover2.png)
     ![Hover Effects](assets/images/hover3.png)
@@ -242,7 +242,7 @@ You can view the wireframes here:
 
           ![Mobile-Friendly Design](assets/images/mobile.png)
       - Tablet
-      
+
           ![Mobile-Friendly Design](assets/images/tablet.png)
 
 ---
