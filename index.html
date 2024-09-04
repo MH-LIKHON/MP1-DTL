@@ -19,16 +19,21 @@
 
 <body>
 
-    <!-- Navigation -->
+    <!-- Navigation Bar with Logo and Links -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Company Logo and Brand Name -->
         <a class="navbar-brand" href="index.html">
             <img src="assets/images/logo.png" alt="DELUXE TRANSPORTATION Logo" class="logo">
             DTL
         </a>
+
+        <!-- Mobile Navigation Toggle -->
         <input type="checkbox" id="navbar-toggle" class="d-none">
         <label for="navbar-toggle" class="navbar-toggler">
             <span class="navbar-toggler-icon"></span>
         </label>
+
+        <!-- Navigation Links -->
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -47,49 +52,62 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Background Video and Main Title -->
     <header id="home" class="jumbotron jumbotron-fluid text-white text-center position-relative" style="overflow: hidden;">
+        <!-- Video Background Looping -->
         <video autoplay muted loop playsinline class="position-absolute w-100 h-100" style="object-fit: cover; top: 50%; left: 50%; transform: translate(-50%, -50%);">
             <source src="assets/videos/dtl.mp4" type="video/mp4">
+            <!-- Fallback Image if Video is Unavailable -->
             <img src="assets/images/fallback.jpg" alt="Fallback Image" style="width: 100%; height: 100%; object-fit: cover;">
         </video>
+
+        <!-- Main Hero Content (Title, Text, and Button) -->
         <div class="container position-relative" style="z-index: 1;">
             <h1 class="display-4 fade-in-element" style="animation-delay: 0.5s;">DELUXE TRANSPORTATION</h1>
             <p class="lead fade-in-element" style="animation-delay: 1s;">We value the safety, quality & time of your travel</p>
+            <!-- Button with Disabled Service Alert -->
             <button class="btn btn-primary btn-lg fade-in-element" style="animation-delay: 2s;" type="button" onclick="alert('Service Not Enabled');">Book Now</button>
         </div>
     </header>
 
-    <!-- Content Section -->
+    <!-- Content Section with Cards for Fleet, Services, and Contact -->
     <section id="welcome" class="container py-5">
         <h2 class="text-center mb-4">Welcome to DELUXE TRANSPORTATION</h2>
         <div class="row">
+            <!-- Card 1: Luxury Fleet -->
             <div class="col-md-4 d-flex align-items-stretch">
                 <div class="card hvr-grow index-card">
                     <img src="assets/images/fleet.jpg" class="card-img-top" alt="Fleet Image">
                     <div class="card-body">
                         <h5 class="card-title">Luxury Fleet</h5>
                         <p class="card-text">Explore our luxury fleet of vehicles for your comfort and safety.</p>
+                        <!-- Link to Fleet Page -->
                         <a href="fleet.html" class="btn btn-dark">View Fleet</a>
                     </div>
                 </div>
             </div>
+
+            <!-- Card 2: Premium Services -->
             <div class="col-md-4 d-flex align-items-stretch">
                 <div class="card hvr-grow index-card">
                     <img src="assets/images/service.jpg" class="card-img-top" alt="Service Image">
                     <div class="card-body">
                         <h5 class="card-title">Premium Services</h5>
                         <p class="card-text">Discover our range of premium transportation services.</p>
+                        <!-- Link to Services Page -->
                         <a href="services.html" class="btn btn-dark">Our Services</a>
                     </div>
                 </div>
             </div>
+
+            <!-- Card 3: Contact Us -->
             <div class="col-md-4 d-flex align-items-stretch">
                 <div class="card hvr-grow index-card">
                     <img src="assets/images/contact.png" class="card-img-top" alt="Contact Image">
                     <div class="card-body">
                         <h5 class="card-title">Get in Touch</h5>
                         <p class="card-text">Contact us to book your next ride with DELUXE TRANSPORTATION.</p>
+                        <!-- Link to Contact Page -->
                         <a href="contact.html" class="btn btn-dark">Contact Us</a>
                     </div>
                 </div>
@@ -97,11 +115,12 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
+    <!-- Testimonials Section with Client Reviews -->
     <section id="testimonials" class="bg-light py-5 fade-in">
         <div class="container">
             <h2 class="text-center mb-4">What Our Clients Say</h2>
             <div class="row">
+                <!-- Testimonial 1 -->
                 <div class="col-md-6">
                     <div class="d-flex align-items-center mb-3">
                         <i class="fa fa-male fa-3x mr-3"></i>
@@ -111,6 +130,8 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Testimonial 2 -->
                 <div class="col-md-6">
                     <div class="d-flex align-items-center mb-3">
                         <i class="fa fa-female fa-3x mr-3"></i>
@@ -124,16 +145,19 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer Section with Contact Icons and Copyright Notice -->
     <footer class="bg-dark text-white py-4">
         <div class="container text-center">
             <h5 class="footer-heading">STAY IN TOUCH</h5>
+            <!-- Contact Icons (Email, Phone, WhatsApp, Facebook) -->
             <p>
                 <a href="#" onclick="alert('Service Not Enabled');" class="text-white mx-2"><i class="fa fa-envelope"></i></a>
                 <a href="#" onclick="alert('Service Not Enabled');" class="text-white mx-2"><i class="fa fa-phone"></i></a>
                 <a href="#" onclick="alert('Service Not Enabled');" class="text-white mx-2"><i class="fa fa-whatsapp"></i></a>
                 <a href="#" onclick="alert('Service Not Enabled');" class="text-white mx-2"><i class="fa fa-facebook"></i></a>
             </p>
+
+            <!-- Copyright Notice -->
             <p class="mb-0 mt-4">© 2024 DELUXE TRANSPORTATION. All Rights Reserved.</p>
         </div>
     </footer>
