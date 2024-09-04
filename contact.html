@@ -2,27 +2,37 @@
 <html lang="en">
 
 <head>
+    <!-- Meta Tags for Character Set, Responsive Viewport, and Compatibility -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- External Stylesheets: Bootstrap, FontAwesome, and Custom Styles -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Page Title -->
     <title>DTL - DELUXE TRANSPORTATION</title>
 </head>
 
 <body>
 
-    <!-- Navigation -->
+    <!-- Navigation Bar with Logo and Links -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Brand Logo and Name -->
         <a class="navbar-brand" href="index.html">
             <img src="assets/images/logo.png" alt="DELUXE TRANSPORTATION Logo" class="logo">
             DTL
         </a>
+
+        <!-- Mobile Navigation Toggle Button -->
         <input type="checkbox" id="navbar-toggle" class="d-none">
         <label for="navbar-toggle" class="navbar-toggler">
             <span class="navbar-toggler-icon"></span>
         </label>
+
+        <!-- Navigation Links -->
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -41,62 +51,71 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Hero Section with Background Video and Main Title -->
     <header id="home" class="jumbotron jumbotron-fluid text-white text-center position-relative" style="overflow: hidden;">
+        <!-- Background Video for Hero Section -->
         <video autoplay muted loop playsinline class="position-absolute w-100 h-100" style="object-fit: cover; top: 50%; left: 50%; transform: translate(-50%, -50%);">
             <source src="assets/videos/dtl.mp4" type="video/mp4">
+            <!-- Fallback Image for Non-Supporting Browsers -->
             <img src="assets/images/fallback.jpg" alt="Fallback Image" style="width: 100%; height: 100%; object-fit: cover;">
         </video>
+
+        <!-- Hero Section Content (Title, Text, and Button) -->
         <div class="container position-relative" style="z-index: 1;">
             <h1 class="display-4 fade-in-element" style="animation-delay: 0.5s;">DELUXE TRANSPORTATION</h1>
             <p class="lead fade-in-element" style="animation-delay: 1s;">We value the safety, quality & time of your travel</p>
+            <!-- Button with Disabled Service Alert -->
             <button class="btn btn-primary btn-lg fade-in-element" style="animation-delay: 2s;" type="button" onclick="alert('Service Not Enabled');">Book Now</button>
         </div>
     </header>
 
-    <!-- Contact Section -->
+    <!-- Contact Form Section -->
     <section id="contact" class="container py-5">
         <h2 class="text-center mb-4">Contact Us</h2>
         <form>
-            <!-- Name Section -->
+            <!-- Step 1: Name Input -->
             <div id="step1">
                 <div class="form-group">
                     <label for="name">What is your name?</label>
                     <input type="text" class="form-control" id="name" placeholder="Enter your name">
                 </div>
+                <!-- Button to go to the next form step -->
                 <div class="d-flex justify-content-center">
                     <button class="btn btn-dark btn-sm" type="button" onclick="document.getElementById('step1').classList.add('d-none');document.getElementById('step2').classList.remove('d-none')">Next</button>
                 </div>
             </div>
 
-            <!-- Email Section -->
+            <!-- Step 2: Email Input -->
             <div id="step2" class="d-none">
                 <div class="form-group">
                     <label for="email">What is your email address?</label>
                     <input type="email" class="form-control" id="email" placeholder="Enter your email">
                 </div>
+                <!-- Button to go to the next form step -->
                 <div class="d-flex justify-content-center">
                     <button class="btn btn-dark btn-sm" type="button" onclick="document.getElementById('step2').classList.add('d-none');document.getElementById('step3').classList.remove('d-none')">Next</button>
                 </div>
             </div>
 
-            <!-- Phone Section (Optional) -->
+            <!-- Step 3: Phone Input (Optional) -->
             <div id="step3" class="d-none">
                 <div class="form-group">
                     <label for="phone">Would you like to provide your phone number? (Optional)</label>
                     <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
                 </div>
+                <!-- Button to go to the next form step -->
                 <div class="d-flex justify-content-center">
                     <button class="btn btn-dark btn-sm" type="button" onclick="document.getElementById('step3').classList.add('d-none');document.getElementById('step4').classList.remove('d-none')">Next</button>
                 </div>
             </div>
 
-            <!-- Message Section -->
+            <!-- Step 4: Message Input -->
             <div id="step4" class="d-none">
                 <div class="form-group">
                     <label for="message">What message would you like to send?</label>
                     <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
                 </div>
+                <!-- Submit Button with Disabled Service Alert -->
                 <div class="d-flex justify-content-center">
                     <button class="btn btn-primary btn-sm" type="button" onclick="alert('Service Not Enabled');">Submit</button>
                 </div>
@@ -104,16 +123,19 @@
         </form>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer Section with Contact Icons and Copyright Notice -->
     <footer class="bg-dark text-white py-4">
         <div class="container text-center">
             <h5 class="footer-heading">STAY IN TOUCH</h5>
+            <!-- Contact Icons: Email, Phone, WhatsApp, Facebook -->
             <p>
                 <a href="#" onclick="alert('Service Not Enabled');" class="text-white mx-2"><i class="fa fa-envelope"></i></a>
                 <a href="#" onclick="alert('Service Not Enabled');" class="text-white mx-2"><i class="fa fa-phone"></i></a>
                 <a href="#" onclick="alert('Service Not Enabled');" class="text-white mx-2"><i class="fa fa-whatsapp"></i></a>
                 <a href="#" onclick="alert('Service Not Enabled');" class="text-white mx-2"><i class="fa fa-facebook"></i></a>
             </p>
+
+            <!-- Copyright Notice -->
             <p class="mb-0 mt-4">© 2024 DELUXE TRANSPORTATION. All Rights Reserved.</p>
         </div>
     </footer>
