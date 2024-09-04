@@ -139,6 +139,23 @@ You can view the wireframes here:
 ## FEATURES
 
 ---
+
+### HOME
+![HOME](assets/images/home.png)
+---
+
+### FLEET
+![FLEET](assets/images/fleet.png)
+---
+
+### SERVICES
+![SERVICES](assets/images/services.png)
+---
+
+### CONTACT
+![CONTACT](assets/images/contact.png)
+---
+
 ### EXISTING FEATURES
 
 ---
@@ -155,17 +172,17 @@ You can view the wireframes here:
     - The homepage features a large hero section with a background video and fallback image for unsupported devices.
     - The hero text and button fade in with smooth animations, drawing attention to the call-to-action.
     - A prominent "Book Now" button leads users to the **Contact** page.
-    ![Hero Section](assets/images/hero-section.png)
+    ![Hero Section](assets/images/hero.png)
 
 2. **Services Section**:
     - A detailed overview of the services offered, accompanied by icons and short descriptions.
     - Each service is presented in a card format, and the layout adjusts to fit any screen size.
-    ![Services Section](assets/images/services-section.png)
+    ![Services Section](assets/images/services-content.png)
 
 3. **Client Testimonials**:
     - A testimonials section on the homepage provides customer feedback to build trust and credibility.
     - Testimonials are displayed using cards, and animations ensure they fade in as users scroll down the page.
-    ![Client Testimonials](assets/images/testimonials-section.png)
+    ![Client Testimonials](assets/images/testimonials.png)
 
 ---
 #### FLEET PAGE
@@ -173,36 +190,21 @@ You can view the wireframes here:
     - The **Fleet** page features a gallery of luxury vehicles available for hire.
     - Each vehicle is showcased with an image, title, and a short description of its features.
     - All vehicle images are responsive, ensuring they maintain a consistent look across different devices.
-    ![Fleet Showcase](assets/images/fleet-page.png)
-
-2. **Interactive Vehicle Display**:
-    - The vehicles are displayed in a grid format, and users can click on each image for more details.
-    - Hover effects are applied to the vehicle images to create an interactive feel when browsing.
-    ![Interactive Fleet](assets/images/interactive-fleet.png)
+    ![Fleet Showcase](assets/images/fleet-content.png)
 
 ---
 #### SERVICES PAGE
 1. **Detailed Services**:
     - The **Services** page provides more in-depth information about each service offered, beyond the brief descriptions on the homepage.
     - Services are grouped into categories for easy navigation, such as **Airport Transfers**, **VIP Services**, and **Corporate Travel**.
-    ![Services Page](assets/images/services-page.png)
-
-2. **Icons and Hover Effects**:
-    - Each service category is accompanied by a custom icon for visual clarity.
-    - Hover effects are applied to icons and buttons to provide visual feedback when the user interacts with the page.
-    ![Hover Effects](assets/images/hover-effects.png)
+    ![Services Page](assets/images/services-content.png)
 
 ---
 #### CONTACT PAGE
 1. **Multi-Step Contact Form**:
     - The **Contact** page includes a modern, multi-step form where users can input their name, email, phone (optional), and message.
     - The form uses client-side validation for required fields and provides instant feedback if any information is missing.
-    ![Contact Form](assets/images/contact-form.png)
-
-2. **Direct Contact Information**:
-    - In addition to the form, the contact page provides users with the company’s phone number, email address, and social media links.
-    - Each contact method includes an icon for easy recognition.
-    ![Direct Contact Information](assets/images/contact-page.png)
+    ![Contact Form](assets/images/contact-content.png)
 
 ---
 #### FOOTER
@@ -210,7 +212,7 @@ You can view the wireframes here:
 - It also displays the company’s contact information, including phone number and email.
 - Copyright information is displayed at the bottom, along with additional navigation links for easy access.
 - Hover effects are applied to all social media icons, changing their color and slightly enlarging them when hovered over.
-![Footer Section](assets/images/footer-section.png)
+![Footer Section](assets/images/footer.png)
 
 ---
 ### INTERACTIVE FEATURES
@@ -218,22 +220,30 @@ You can view the wireframes here:
 1. **Hover Effects**:
     - Hover effects are applied to key elements, including buttons, service icons, and social media links. 
     - Buttons change color and grow slightly when hovered over, providing users with immediate visual feedback.
-    ![Hover Effects](assets/images/hover-effects.png)
+    ![Hover Effects](assets/images/hover1.png)
+    ![Hover Effects](assets/images/hover2.png)
+    ![Hover Effects](assets/images/hover3.png)
 
 2. **Animated Fade-in Effects**:
     - Smooth animations are applied throughout the site, with elements fading in as users scroll down the page.
     - This adds an interactive and modern feel to the site without overwhelming the user.
-    ![Animated Fade-in](assets/images/animated-fadein.png)
+    ![Animated Fade-in](assets/images/fadein1.png)
+    ![Animated Fade-in](assets/images/fadein2.png)
 
 3. **Call-to-Action Buttons**:
     - Prominent call-to-action buttons throughout the site, directing users to the **Contact** page for bookings or inquiries.
     - The buttons are designed to stand out, with hover effects that enhance user interaction.
-    ![Call-to-Action Buttons](assets/images/cta-buttons.png)
+    ![Call-to-Action Buttons](assets/images/calltoaction.png)
 
 4. **Mobile-Friendly Design**:
     - The entire site is built with responsiveness in mind, ensuring it looks great on all devices, from desktops to smartphones.
     - Navigation, layout, and images are all optimized for smaller screens.
-    ![Mobile-Friendly Design](assets/images/mobile-design.png)
+      - Mobile
+
+          ![Mobile-Friendly Design](assets/images/mobile.png)
+      - Tablet
+      
+          ![Mobile-Friendly Design](assets/images/tablet.png)
 
 ---
 ### FUTURE FEATURES
