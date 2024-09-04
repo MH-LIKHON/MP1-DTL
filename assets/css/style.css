@@ -1,0 +1,567 @@
+/*-----Font Import-----*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Exo:400,600,700');
+
+/*-----Base Styles-----*/
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+/*-----Navigation-----*/
+.navbar {
+    background-color: #222;
+    padding: 15px;
+}
+
+.navbar .nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.navbar .nav-link:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+.navbar .navbar-brand {
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+    color: #ffcc00;
+    text-transform: uppercase;
+}
+
+.navbar .navbar-brand:hover {
+    color: #fff;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: block;
+        background-color: transparent;
+        border: none;
+        outline: none;
+    }
+
+    #navbarNav {
+        display: none;
+    }
+
+    #navbar-toggle:checked + .navbar-toggler,
+    #navbar-toggle:checked + .navbar-toggler + .navbar-collapse {
+        background-color: #ffcc00;
+    }
+
+    #navbar-toggle:checked + .navbar-toggler + .navbar-collapse {
+        display: block;
+        width: 100%;
+        background-color: #222;
+    }
+
+    .navbar-collapse ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-collapse ul li {
+        margin-bottom: 10px;
+    }
+
+    .navbar-collapse ul li a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/*-----Hero Section-----*/
+header.jumbotron {
+    padding: 120px 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #fff;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    font-family: 'Exo', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+header .btn {
+    background-color: #ffcc00;
+    border: none;
+    padding: 15px 30px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+header .btn:hover {
+    background-color: #333;
+    color: #ffcc00;
+    transform: translateY(-3px);
+}
+
+header .btn:active,
+header .btn:focus {
+    background-color: #ffcc00;
+    color: #fff;
+}
+
+.logo {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.fade-in-element {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes typewriter {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.fade-in-element {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.typewriter {
+    overflow: hidden;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typewriter 4s steps(40, end) 2s 1 normal both, blink 0.75s step-end infinite;
+}
+
+/*-----Content Section-----*/
+section#welcome {
+    padding: 80px 0;
+}
+
+section#welcome h2 {
+    margin-bottom: 40px;
+}
+
+.row.equal-height-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+    border-bottom: 5px solid #ffcc00;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.card-body {
+    text-align: center;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.card-title {
+    font-family: 'Exo', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.card-text {
+    font-weight: 300;
+    color: #777;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card .btn {
+    background-color: #222;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    align-self: center;
+}
+
+.card .btn:hover {
+    background-color: #ffcc00;
+    color: #333;
+    transform: scale(1.05);
+}
+
+/*-----Fleet Section-----*/
+section#fleet {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+section#fleet h2 {
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+}
+
+.card {
+    border: none;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    height: 200px;
+    object-fit: contain;
+    width: 100%;
+    border-bottom: 5px solid #ffcc00;
+}
+
+.index-card img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+    border-bottom: 5px solid #ffcc00;
+}
+
+.card-body {
+    text-align: center;
+    padding: 20px;
+}
+
+.card-title {
+    font-family: 'Exo', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.card-text {
+    font-weight: 300;
+    color: #777;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card .btn {
+    background-color: #222;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    align-self: center;
+}
+
+.card .btn:hover {
+    background-color: #ffcc00;
+    color: #333;
+    transform: scale(1.05);
+}
+
+/*-----Services Section-----*/
+section#services {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+}
+
+section#services h2 {
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+}
+
+section#services h3 {
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #222;
+}
+
+section#services p {
+    font-weight: 300;
+    color: #666;
+    line-height: 1.7;
+}
+
+#services .row {
+    margin-bottom: 0px;
+}
+
+#services .card {
+    margin: 0 auto;
+}
+
+@media (max-width: 576px) {
+    section#services .row {
+        margin-bottom: 15px;
+    }
+
+    section#services .row:last-child {
+        margin-bottom: 0;
+    }
+
+    section#services .card {
+        margin-bottom: 15px;
+    }
+
+    section#services .card:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/*-----Why Choose Us Section-----*/
+section#why-choose-us {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+section#why-choose-us h2 {
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+}
+
+section#why-choose-us .col-md-3 h3 {
+    font-size: 48px;
+    color: #ffcc00;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+section#why-choose-us .col-md-3 p {
+    font-weight: 300;
+    color: #777;
+}
+
+/*-----Contact Section-----*/
+section#contact {
+    padding: 80px 0;
+    background-color: #f8f8f8;
+}
+
+section#contact h2 {
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+}
+
+section#contact .form-group label {
+    font-weight: 500;
+    color: #333;
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+}
+
+section#contact .form-group textarea {
+    resize: none;
+}
+
+section#contact .btn {
+    background-color: #ffcc00;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section#contact .btn:hover {
+    background-color: #222;
+    color: #ffcc00;
+    transform: translateY(-3px);
+}
+
+/*-----Footer-----*/
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 50px 0 10px 0;
+    text-align: center;
+}
+
+footer .footer-heading {
+    font-family: 'Exo', sans-serif;
+    font-weight: 600;
+    color: #ffcc00;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+footer a {
+    color: #ffcc00;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    font-size: 24px;
+}
+
+footer a:hover {
+    color: #fff;
+    transform: scale(1.2);
+}
+
+footer p {
+    margin: 0;
+    font-weight: 300;
+}
+
+footer .fa {
+    font-size: 24px;
+    margin: 0 15px;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+footer .fa:hover {
+    color: #ffcc00;
+    transform: scale(1.2);
+}
+
+/*-----Responsive Design-----*/
+@media (max-width: 768px) {
+    .navbar .navbar-collapse {
+        text-align: center;
+    }
+
+    .navbar .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .navbar .nav-link {
+        font-size: 16px;
+    }
+
+    header.jumbotron {
+        padding: 80px 0;
+    }
+
+    header.jumbotron h1 {
+        font-size: 32px;
+    }
+
+    section#fleet,
+    section#services,
+    section#why-choose-us,
+    section#contact {
+        padding: 50px 0;
+    }
+
+    section#why-choose-us .col-md-3 h3 {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 576px) {
+    section#fleet,
+    section#services,
+    section#why-choose-us,
+    section#contact {
+        padding: 40px 0;
+    }
+
+    section#why-choose-us .col-md-3 h3 {
+        font-size: 32px;
+    }
+}
