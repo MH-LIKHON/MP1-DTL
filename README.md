@@ -30,35 +30,89 @@ Deluxe Transportation is a static front-end website designed to present useful i
 ### Project Goals
 The goal of this project is to create a responsive, user-friendly website that effectively communicates the services offered by Deluxe Transportation. The website aims to attract potential customers by showcasing the fleet, services, and contact information.
 
+## User Experience (UX)
+
+### Pre-Project Planning
+
+To kick off this project, I evaluated several service-based industries that would benefit from a well-designed, user-centric website. I scored each industry on a set of criteria to determine which would provide the best balance between showcasing my skills and meeting market demands. The criteria were:
+
+- **Portfolio-Weight**: How well the website would represent my capabilities in web development.
+- **Complexity**: The complexity of the site features and content.
+- **Time to Research**: The amount of time required to understand and implement the content.
+- **Revenue Potential**: The potential for generating income by building similar websites for businesses in the industry.
+
+| Type                      | Portfolio-Weight | Complexity | Time to Research | Revenue Potential | Total Score |
+|---------------------------|------------------|------------|------------------|-------------------|-------------|
+| Luxury Transportation      | 9                | 8          | 7                | 9                 | 33          |
+| Event Planning             | 8                | 7          | 6                | 8                 | 29          |
+| Small Business Websites    | 9                | 6          | 7                | 8                 | 30          |
+| Entertainment Services     | 7                | 6          | 5                | 7                 | 25          |
+
+From this analysis, I chose to create a website for the **Luxury Transportation** industry. This project was ideal for demonstrating a wide range of web development skills, including responsive design, media integration, and user interaction, while also catering to a real-world market need.
+
+### Service Industry Ranking
+
+I also ranked specific services within the transportation industry to identify which would offer the most engaging content and user experience:
+
+| No | Service Type             | Rank |
+|----|--------------------------|------|
+| 1  | Corporate Travel          | 1    |
+| 2  | Airport Transfers         | 2    |
+| 3  | Wedding Transportation    | 3    |
+| 4  | Event Transportation      | 4    |
+| 5  | VIP Services              | 5    |
+
+The focus on **corporate travel** and **airport transfers** reflected the growing demand for these services in the luxury transportation market, making it a good fit for the target audience.
+
 ### User Stories
-1. **New User Goals**:
-    - I want to understand what services the company offers.
-    - I want to easily find contact information to book a service.
-    - I want to see the fleet of vehicles available for hire.
 
-2. **Returning User Goals**:
-    - I want to quickly access booking options.
-    - I want to stay updated on new services or changes in offerings.
+#### New Users
+- **As a new user**, I want to easily understand what services the company offers.
+- **As a new user**, I want to see high-quality images of the fleet to assess the type of vehicles available.
+- **As a new user**, I want to quickly find contact information to inquire about or book a service.
 
-3. **Frequent User Goals**:
-    - I want to contact the company directly through the website.
+#### Returning Users
+- **As a returning user**, I want to quickly access the booking options.
+- **As a returning user**, I want to find updates or new services being offered.
+- **As a returning user**, I want to explore different fleet options for my next booking.
+
+#### Frequent Users
+- **As a frequent user**, I want to have access to a fast and simple way to contact the company directly for bookings.
+- **As a frequent user**, I want the website to be easy to navigate with minimal clicks to get the information I need.
+
+#### Business Owner
+- **As the business owner**, I want to showcase the luxury vehicles in a way that attracts high-end clients.
+- **As the business owner**, I want to make it easy for users to inquire about our services and book appointments.
+- **As the business owner**, I want to feature client testimonials to build credibility and trust with new visitors.
 
 ### Design
+
 #### Colour Scheme
-The website uses a professional colour palette of dark greys, whites, and accent colours like orange and blue to create a clean, modern look.
+The design emphasizes a professional look with a modern color palette. I selected:
+- **Dark Grey and Black**: To convey luxury and elegance.
+- **White**: For clean backgrounds and easy readability.
+- **Accent Colors (Gold/Yellow)**: To highlight important elements like buttons and call-to-actions.
 
 #### Typography
-Two fonts, **Roboto** and **Exo**, are used throughout the website to maintain a balance between readability and style.
+Two fonts were chosen to maintain a balance between professionalism and readability:
+- **Roboto**: Used for the body text due to its simplicity and legibility.
+- **Exo**: Applied to headings and call-to-action areas to give the text a modern and bold feel.
 
 #### Imagery
-High-quality images of the fleet and services are used to engage the user and convey a sense of luxury and professionalism.
+High-resolution images of the fleet and service offerings play a crucial role in the design. The imagery is intended to:
+- Convey the luxury of the transportation services.
+- Create visual engagement that encourages users to explore the services further.
+- Maintain a consistent, high-quality aesthetic across the site.
 
 ### Wireframes
-Wireframes were created to plan the layout of the site across different screen sizes (mobile, tablet, desktop). These wireframes served as a blueprint for the website's responsive design.
-  - [HOME](assets/wireframes/MP1-DTL_home.bmpr)
-  - [FLEET](assets/wireframes/MP1-DTL_fleet.bmpr)
-  - [SERVICES](assets/wireframes/MP1-DTL_services.bmpr)
-  - [CONTACT](assets/wireframes/MP1-DTL_contact.bmpr)
+
+Wireframes were created to map out the layout and structure of the website on various devices (desktop, tablet, and mobile). These wireframes helped ensure a smooth user journey, from discovering the company’s services to contacting them for bookings.
+
+You can view the wireframes here:
+- [Home Page Wireframe](assets/wireframes/MP1-DTL_home.bmpr)
+- [Fleet Page Wireframe](assets/wireframes/MP1-DTL_fleet.bmpr)
+- [Services Page Wireframe](assets/wireframes/MP1-DTL_services.bmpr)
+- [Contact Page Wireframe](assets/wireframes/MP1-DTL_contact.bmpr)
 
 ## Features
 
