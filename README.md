@@ -206,10 +206,13 @@ You can view the wireframes here:
     - The form uses client-side validation for required fields and provides instant feedback if any information is missing.
     ![Contact Form](assets/images/contact-content.png)
 
+    - Write To Us, option for postal communications.
+    ![Contact Form](assets/images/writetous.png)
+
 ---
 #### FOOTER
-- The footer is consistent across all pages and includes links to the company’s social media profiles.
-- It also displays the company’s contact information, including phone number and email.
+- The footer is consistent across all pages and includes links to the social media profiles.
+- Facebook, Instagram, WhatsApp, X (previously known as Twitter) & YouTube.
 - Copyright information is displayed at the bottom, along with additional navigation links for easy access.
 - Hover effects are applied to all social media icons, changing their color and slightly enlarging them when hovered over.
 ![Footer Section](assets/images/footer.png)
