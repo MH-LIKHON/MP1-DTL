@@ -171,15 +171,25 @@ You can view the wireframes here:
 1. **Hero Section**:
     - The homepage features a large hero section with a background video and fallback image for unsupported devices.
     - The hero text and button fade in with smooth animations, drawing attention to the call-to-action.
-    - A prominent "Book Now" button leads users to the **Contact** page.
+    - A prominent "Book Now" button leads users to the **Book Your Ride** popup.
     ![Hero Section](assets/images/hero.png)
 
-2. **Services Section**:
+2. **Book Your Ride**
+    - The **"Book Now"** button is featured prominently in the hero section of all pages, leading users to the interactive **Book Your Ride** form. This modal-based form allows users to book a ride seamlessly across five guided steps.
+    ![Book Your Rider Form](assets/images/bookride1.png)
+    - The form walks users through essential booking details, including name, contact information, pickup/drop-off locations, and ride preferences (date, time, and vehicle type). Each step is intuitive, with "Next" and "Back" buttons for easy navigation and review.
+    ![Book Your Rider Form](assets/images/bookride2.png)
+    - Real-time validation ensures that all required fields are completed correctly, preventing errors and missing information in the booking process.
+    - Upon form submission, users receive a confirmation modal ("Booking Received"), which assures them that their ride has been successfully booked and they will receive further details via email.
+    ![Booking Received](assets/images/bookingreceived.png)
+    - The "Book Now" button and the booking form are available across the site without disrupting the page layout, providing a smooth and user-friendly booking experience.
+
+3. **Services Section**:
     - A detailed overview of the services offered, accompanied by icons and short descriptions.
     - Each service is presented in a card format, and the layout adjusts to fit any screen size.
     ![Services Section](assets/images/services-content.png)
 
-3. **Client Testimonials**:
+4. **Client Testimonials**:
     - A testimonials section on the homepage provides customer feedback to build trust and credibility.
     - Testimonials are displayed using cards, and animations ensure they fade in as users scroll down the page.
     ![Client Testimonials](assets/images/testimonials.png)
@@ -204,10 +214,13 @@ You can view the wireframes here:
 1. **Multi-Step Contact Form**:
     - The **Contact** page includes a modern, multi-step form where users can input their name, email, phone (optional), and message.
     - The form uses client-side validation for required fields and provides instant feedback if any information is missing.
-    ![Contact Form](assets/images/contact-content.png)
-
     - Write To Us, option for postal communications.
-    ![Contact Form](assets/images/writetous.png)
+    ![Contact Form](assets/images/contact-content.png)
+    - The form is divided into easy-to-follow steps, ensuring a smooth and organized user experience. Each step allows users to focus on one set of information at a time, enhancing clarity and reducing form abandonment.
+    - The form is equipped with "Next" and "Back" buttons, enabling users to navigate through the steps effortlessly, without losing the data they've entered.
+    - Upon submission, users are greeted with a confirmation modal ("Thanks for Reaching Out!") that reassures them their message has been received and the team will get back to them shortly.
+    ![Thank You Message](assets/images/thankyou.png)
+    - The contact form's multi-step approach makes it user-friendly, and the validation ensures that necessary details like name, email, and message are properly filled before submission.
 
 ---
 #### FOOTER
@@ -252,8 +265,8 @@ You can view the wireframes here:
 ### FUTURE FEATURES
 
 1. **Online Booking Form**:
-    - An online booking form will allow users to directly schedule services through the website.
-    - Users will be able to select their preferred date and time, along with the service they need.
+    - An online booking form with a location lookup feature also current location (locate me) as a suggestion option.
+    - Error messages pop up when the user misses any tab or keeps it not filled.
 
 2. **Expanded Testimonials Section**:
     - A rotating carousel feature will be added to the testimonials section, displaying more customer reviews in an engaging format.
@@ -563,6 +576,13 @@ This will open the website in your browser for local viewing and testing.
     - **Contact Image**: [Google Photos](https://www.google.com/search?q=get%20in%20touch&udm=2&tbs=rimg:CSjzhLS2JFOaYXM3cgSjCqu1sgIAwAIA2AIA4AIA&hl=en&sa=X&ved=0CBoQuIIBahcKEwjQlv6005mIAxUAAAAAHQAAAAAQCQ#vhid=oFEqwsXaf7Ax-M&vssid=mosaic)
     - **Videos**: [ShutterStock](https://www.shutterstock.com/video/clip-16780849-4k-big-airplane-landing-dusk)
 - **Logo**: The logo was purchased and owned by the project owner.
+- **Footer Icon Links**: The footer contains prominent social media links for easy access:
+  - **Facebook**: [https://www.facebook.com/](https://www.facebook.com/)
+  - **Instagram**: [https://www.instagram.com/](https://www.instagram.com/)
+  - **LinkedIn**: [https://www.linkedin.com/](https://www.linkedin.com/)
+  - **YouTube**: [https://www.youtube.com/](https://www.youtube.com/)
+  - **WhatsApp**: [https://www.whatsapp.com/](https://www.whatsapp.com/)
+  - **Twitter (X)**: [https://www.x.com/](https://www.x.com/)
 
 ---
 ### CODE
