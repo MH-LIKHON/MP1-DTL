@@ -15,7 +15,9 @@
 4. [Technologies Used](#technologies-used)
 5. [Testing](#testing)
     - [Manual Testing](#manual-testing)
-    - [Validation](#validation)
+    - [Google Lighthouse](#google-lighthouse-testing)
+    - [HTML Validation](#html-validation)
+    - [CSS Validation](#css-validation)
     - [Bugs and Fixes](#bugs-and-fixes)
 6. [Deployment](#deployment)
 7. [Credits](#credits)
@@ -386,7 +388,7 @@ All HTML pages were validated using the W3C Markup Validation Service to ensure 
 | `contact-complete.html` | No Errors      |
 
 ---
-#### SCREENSHOTS:
+#### RESULTS:
 - `index.html` Validation Result:
   ![index.html validation](assets/pdfs/index-validation.pdf)
 
@@ -409,7 +411,7 @@ The project's CSS was validated using the W3C CSS Validator to ensure there were
 | `style.css`           | No Errors          |
 
 ---
-#### SCREENSHOT:
+#### RESULTS:
 - CSS Validation Result:
   ![CSS validation](assets/pdfs/css-validation.pdf)
 
